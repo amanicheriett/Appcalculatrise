@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+
+    android:weightSum="1">
+
+    <TextView
+        android:text="Calculatrice"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        android:textSize="24sp"
+        android:layout_weight="0.07" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editOp1"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editOp2"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:elevation="1dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="+"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnadd"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="-"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsub"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="/"
+            android:layout_height="wrap_content"
+            android:id="@+id/btndiv"
+            android:layout_width="78dp"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:text="*"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnmul"
+            android:layout_weight="0.03"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="resultat"
+        android:textSize="24dp" />
+</LinearLayout>
